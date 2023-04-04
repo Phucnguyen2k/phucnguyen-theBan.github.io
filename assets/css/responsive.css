@@ -1,0 +1,30 @@
+/*
+    PC: >= 1200px 
+    Table: >= 740px & <=1200px
+    Mobile: <= 720px
+*/
+
+/*PC*/
+@media (min-width: 1024px){
+
+}
+
+/* table */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* mobile */
+@media (max-width: 740px) {
+    #nav > li {
+        display: block;
+    }
+    
+    #header {
+        overflow: hidden;
+    }
+    
+    #header .sreach-btn {
+        display: none;
+    }
+}

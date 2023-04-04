@@ -1,7 +1,1 @@
 "# w3-TheBand"
-"# The-Band.github.io" 
-"# The-Band.github.io" 
-"# The-Band.github.io" 
-"# The-Band.github.io" 
-"# The-Band.github.io" 
-"# The-Band.github.io" 
