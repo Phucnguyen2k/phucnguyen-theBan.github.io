@@ -5,23 +5,26 @@
 */
 
 /*PC*/
-@media (min-width: 1024px){
-
-}
+@media (min-width: 1024px) {}
 
 /* table */
-@media (min-width: 740px) and (max-width: 1023px) {
-
-}
+@media (min-width: 740px) and (max-width: 1023px) {}
 
 /* mobile */
 @media (max-width: 740px) {
-    #nav > li {
+    #nav>li {
         display: block;
     }
-    
-    #header {
+
+    #nav {
+        display: block;
+    }
+
+    /* #header {
         overflow: hidden;
+    } */
+    .mobile-menu {
+        display: block;
     }
     
     #header .sreach-btn {

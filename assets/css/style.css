@@ -78,7 +78,7 @@ html {
     font-family:  Helvetica,Arial, sans-serif;
 }
 #main {
-    overflow: hidden;
+    
 }
 
 #header {
@@ -91,7 +91,9 @@ html {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     z-index: 1;
 } 
-
+#header {
+    overflow:hidden ;
+}
 #nav {
     display: inline-block;
 }
@@ -148,27 +150,31 @@ html {
     display: block;
 }
 
-.mobile-menu,
-#header .sreach-btn{
-    float: right;
+.mobile-menu {
+    position: absolute;
+        top: 0;
+        right: 10px;
+    padding: 10px 21px;
+    display: none;
 }
 
-#header .sreach-btn:hover{
+.sreach-btn{
+    float: right;
+    padding: 13px 21px;
+}
+
+.sreach-btn:hover{
     cursor: pointer;
     background-color: #f44336 !important;
 }
 
 .menu-icon,
-#header .sreach-icon{
+.sreach-icon{
     color: #fff;
     font-size: 20px;
     line-height: 46px;
-    padding: 0 21px;
 }
 
-.menu-icon {
-    background-color: #ccc;
-}
 #slider {
     /* background-color: #333; */
     margin-top: 46px; /*chieu cau cua header*/
