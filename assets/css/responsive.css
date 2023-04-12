@@ -12,6 +12,9 @@
 
 /* mobile */
 @media (max-width: 740px) {
+    #header {
+        overflow: hidden;
+    }
     #nav>li {
         display: block;
     }
@@ -20,9 +23,19 @@
         display: block;
     }
 
-    /* #header {
-        overflow: hidden;
-    } */
+    #nav li a {
+        padding: 1px 24px;
+    }
+    #nav .subnav {
+        position: initial;
+        background: #333;
+    }
+    
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 40px;
+    }
+
     .mobile-menu {
         display: block;
     }

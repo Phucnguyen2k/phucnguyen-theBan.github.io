@@ -226,8 +226,14 @@
             var menuItems = document.querySelectorAll('#nav > li a[href*="#"]');
             for (var i = 0; i < menuItems.length; i++) {
                 var menuItem = menuItems[i];
-                menuItem.onclick = function () {
-                    header.style.height = null;
+                menuItem.onclick = function (e) {
+                    //hien menu subnav
+                    var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                    if (isParentMenu) {
+                        e.preventDefault();
+                    } else {
+                        header.style.height = null;
+                    }
                 }
             }
 
@@ -251,7 +257,7 @@
             for (const buyBtn of buyBtns) {
                 buyBtn.addEventListener('click', showBuyTickets)
             }
-
+        
             //nghe cllick vao close
             modalClose.addEventListener('click', hideBuyTickets)
             modal.addEventListener('click', hideBuyTickets)
